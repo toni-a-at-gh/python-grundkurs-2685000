@@ -1,38 +1,18 @@
 #!/usr/bin/env python3
 
-import argparse
+# Aufgabe: Erstellen Sie ein Skript, das die Länge eines Textes analysiert und Informationen darüber liefert.
 
-# Verarbeiten von Befehlszeilenargumenten mit argparse
+# Das Skript soll folgende Funktionalität bieten:
+# 1. Ein Pflichtargument (positional argument), das einen Text entgegennimmt.
+# 2. Ein optionales Argument --details, das zusätzliche Informationen liefert:
+#    - Anzahl der Zeichen
+#    - Anzahl der Wörter
+# 3. Wenn das Argument --details nicht angegeben wird, soll nur die Anzahl der Zeichen ausgegeben werden.
 
-# ArgumentParser-Objekt erstellen
-parser = argparse.ArgumentParser(description="Einfaches Beispiel für die Verwendung von argparse.")
+# Beispiel:
+# python3 script.py "Dies ist ein Beispieltext." --details
+# Ausgabe:
+# Zeichen: 27
+# Wörter: 5
 
-# Argumente hinzufügen
-parser.add_argument("--zahl1", type=float, help="Die erste Zahl", required=True)
-parser.add_argument("--zahl2", type=float, help="Die zweite Zahl", required=True)
-parser.add_argument("--operation", choices=["add", "sub", "mul", "div"], default="add", help="Die auszuführende Operation (add, sub, mul, div)")
-
-# Argumente parsen
-args = parser.parse_args()
-
-# Berechnungen basierend auf den Argumenten
-if args.operation == "add":
-    result = args.zahl1 + args.zahl2
-elif args.operation == "sub":
-    result = args.zahl1 - args.zahl2
-elif args.operation == "mul":
-    result = args.zahl1 * args.zahl2
-elif args.operation == "div":
-    if args.zahl2 != 0:
-        result = args.zahl1 / args.zahl2
-    else:
-        result = "Fehler: Division durch Null"
-
-# Ergebnis ausgeben
-print("Das Ergebnis ist:", result)
-
-# Aufgabe:
-# Erweitern Sie das Skript, um die Argumente für Potenzierung (pow) zu unterstützen.
-# Nutzen sie ein Flag um zu symboliesieren, dass das Ergebnis ausgegeben werden soll.
-# Hinweis: https://docs.python.org/3/library/argparse.html#name-or-flags
-
+# Optional: Erweitern Sie das Skript, um auch die Anzahl der Vokale und Konsonanten zu zählen.

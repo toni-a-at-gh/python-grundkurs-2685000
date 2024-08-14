@@ -1,37 +1,41 @@
 #!/usr/bin/env python3
 
+# Aufgabe: Erstellen Sie ein Skript, das die Länge eines Textes analysiert und Informationen darüber liefert.
+
+# Das Skript soll folgende Funktionalität bieten:
+# 1. Ein Pflichtargument (positional argument), das einen Text entgegennimmt.
+# 2. Ein optionales Argument --details, das zusätzliche Informationen liefert:
+#    - Anzahl der Zeichen
+#    - Anzahl der Wörter
+# 3. Wenn das Argument --details nicht angegeben wird, soll nur die Anzahl der Zeichen ausgegeben werden.
+
+# Beispiel:
+# python3 script.py "Dies ist ein Beispieltext." --details
+# Ausgabe:
+# Zeichen: 27
+# Wörter: 5
+
+# Optional: Erweitern Sie das Skript, um auch die Anzahl der Vokale und Konsonanten zu zählen.
+
 import argparse
 
-# Verarbeiten von Befehlszeilenargumenten mit argparse
-
-# ArgumentParser-Objekt erstellen
-parser = argparse.ArgumentParser(description="Einfaches Beispiel für die Verwendung von argparse.")
-
-# Argumente hinzufügen
-parser.add_argument("--zahl1", type=float, help="Die erste Zahl", required=True)
-parser.add_argument("--zahl2", type=float, help="Die zweite Zahl", required=True)
-parser.add_argument("--operation", choices=["add", "sub", "mul", "div"], default="add", help="Die auszuführende Operation (add, sub, mul, div)")
-parser.add_argument("--show_result", action="store_true", help="Flag damit Ergibnis ausgegeben wird")
-
-# Argumente parsen
+parser = argparse.ArgumentParser(description="Anaylisiere den Text und liefere Details darüber.")
+parser.add_argument("text", help="Eingabe Text")
+parser.add_argument("--details", action="store_true", help="Zeige nähre Details an")
 args = parser.parse_args()
 
-# Berechnungen basierend auf den Argumenten
-if args.operation == "add":
-    result = args.zahl1 + args.zahl2
-elif args.operation == "sub":
-    result = args.zahl1 - args.zahl2
-elif args.operation == "mul":
-    result = args.zahl1 * args.zahl2
-elif args.operation == "div":
-    if args.zahl2 != 0:
-        result = args.zahl1 / args.zahl2
-    else:
-        result = "Fehler: Division durch Null"
-elif args.operation == "pow":
-    result = args.zahl1 ** args.zahl2
+text = args.text
+characters = len(text)
+words = len(text.split())
 
-# Ergebnis ausgeben
-if args.show_result:
-    print("Das Ergebnis ist:", result)
+print(f"Zeichen: {characters}")
+if args.details:
+    print(f"Wörter: {words}")
 
+    vowels = "aeiou"
+    sum_vowels = sum(1 for char in text if char.lower() in vowels)
+    print(f"Vokale: {sum_vowels}")
+
+    consonants = "bcdfghjklmnpqrstvwxyz"
+    sum_consonants = sum(1 for char in text if char.lower() in consonants)
+    print(f"Konsonanten: {sum_consonants}")
