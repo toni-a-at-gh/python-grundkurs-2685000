@@ -5,7 +5,6 @@
 # Das Skript soll folgende Funktionalität bieten:
 # 1. Ein Pflichtargument (positional argument), das einen Text entgegennimmt.
 # 2. Ein optionales Argument --details, das zusätzliche Informationen liefert:
-#    - Anzahl der Zeichen
 #    - Anzahl der Wörter
 # 3. Wenn das Argument --details nicht angegeben wird, soll nur die Anzahl der Zeichen ausgegeben werden.
 
