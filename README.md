@@ -40,4 +40,4 @@ Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linke
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/tbd
-[lil-thumbnail-url]: tbd
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQHy88_RfLwlJw/learning-public-crop_675_1200/0/1687258117518?e=2147483647&v=beta&t=Dfk6Yk8Uljvd9UtwpxGyhpWhx_UF31ccWdm8XXuCIMI
