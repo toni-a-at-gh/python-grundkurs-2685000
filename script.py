@@ -5,7 +5,7 @@
 # 1. Die Klasse soll die folgenden Attribute (Member-Variablen) haben:
 #    - Inhaber: Der Name des Kontoinhabers (öffentlich).
 #    - Kontonummer: Eine eindeutige Kontonummer (öffentlich).
-#    - __kontostand: Der aktuelle Kontostand (privat).
+#    - __kontostand: Der aktuelle Kontostand (nicht öffentlich).
 
 # 2. Implementieren Sie die folgenden Methoden:
 #    - __init__: Initialisiert den Kontoinhaber, die Kontonummer und den anfänglichen Kontostand.
