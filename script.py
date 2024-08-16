@@ -9,7 +9,7 @@ class Buch:
         """Initialisiert das Buch mit einem Titel und einem Autor."""
         self.titel = titel  # Öffentliches Attribut
         self.autor = autor  # Öffentliches Attribut
-        self._status = "verfügbar"  # Privates Attribut, das den Ausleihstatus des Buches angibt
+        self._status = "verfügbar"  # Nicht öffentliches Attribut, das den Ausleihstatus des Buches angibt
 
     def ausleihen(self):
         """Markiert das Buch als ausgeliehen, wenn es verfügbar ist."""
