@@ -7,7 +7,7 @@ class Buch:
         """Initialisiert das Buch mit einem Titel und einem Autor."""
         self.titel = titel
         self.autor = autor
-        self.__status = "verfügbar"
+        self._status = "verfügbar"
 
     def __str__(self) -> str:
         """Gibt eine benutzerfreundliche Darstellung des Buches zurück."""
@@ -15,31 +15,31 @@ class Buch:
 
     def __repr__(self) -> str:
         """Gibt eine technische Darstellung des Buches zurück, nützlich für Debugging."""
-        return f"Buch(titel='{self.titel}', autor='{self.autor}', status='{self.__status}')"
+        return f"Buch(titel='{self.titel}', autor='{self.autor}', status='{self._status}')"
 
     def __call__(self) -> str:
         """Macht die Instanz aufrufbar und gibt eine Statusmeldung zurück."""
-        return f"Das Buch '{self.titel}' ist aktuell {self.__status}."
+        return f"Das Buch '{self.titel}' ist aktuell {self._status}."
 
     def ausleihen(self):
         """Markiert das Buch als ausgeliehen, wenn es verfügbar ist."""
-        if self.__status == "verfügbar":
-            self.__status = "ausgeliehen"
+        if self._status == "verfügbar":
+            self._status = "ausgeliehen"
             print(f"Das Buch '{self.titel}' wurde ausgeliehen.")
         else:
             print(f"Das Buch '{self.titel}' ist bereits ausgeliehen.")
 
     def zurückgeben(self):
         """Markiert das Buch als verfügbar."""
-        if self.__status == "ausgeliehen":
-            self.__status = "verfügbar"
+        if self._status == "ausgeliehen":
+            self._status = "verfügbar"
             print(f"Das Buch '{self.titel}' wurde zurückgegeben.")
         else:
             print(f"Das Buch '{self.titel}' ist bereits verfügbar.")
 
     def get_status(self) -> str:
         """Gibt den aktuellen Ausleihstatus des Buches zurück."""
-        return self.__status
+        return self._status
 
 # Erstellung und Nutzung der erweiterten Buch-Klasse
 buch = Buch("Der Herr der Ringe", "J.R.R. Tolkien")
