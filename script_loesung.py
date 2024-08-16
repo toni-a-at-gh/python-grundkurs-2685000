@@ -9,53 +9,53 @@ class Buch:
         """Initialisiert das Buch mit einem Titel und einem Autor."""
         self.titel = titel  # Öffentliches Attribut
         self.autor = autor  # Öffentliches Attribut
-        self.__status = "verfügbar"  # Privates Attribut, das den Ausleihstatus des Buches angibt
+        self._status = "verfügbar"  # Privates Attribut, das den Ausleihstatus des Buches angibt
 
     def ausleihen(self):
         """Markiert das Buch als ausgeliehen, wenn es verfügbar ist."""
-        if self.__status == "verfügbar":
-            self.__status = "ausgeliehen"
+        if self._status == "verfügbar":
+            self._status = "ausgeliehen"
             print(f"Das Buch '{self.titel}' wurde ausgeliehen.")
         else:
             print(f"Das Buch '{self.titel}' ist bereits ausgeliehen.")
 
     def zurückgeben(self):
         """Markiert das Buch als verfügbar."""
-        if self.__status == "ausgeliehen":
-            self.__status = "verfügbar"
+        if self._status == "ausgeliehen":
+            self._status = "verfügbar"
             print(f"Das Buch '{self.titel}' wurde zurückgegeben.")
         else:
             print(f"Das Buch '{self.titel}' ist bereits verfügbar.")
 
     def get_status(self) -> str:
         """Gibt den aktuellen Ausleihstatus des Buches zurück."""
-        return self.__status
+        return self._status
 
 class Bücherregal:
     """Eine Klasse zur Verwaltung eines Bücherregals."""
 
     def __init__(self):
         """Initialisiert das Bücherregal als leeres Regal."""
-        self.__bücher = []  # Privates Attribut, das eine Liste von Büchern speichert
+        self._bücher = []  # Privates Attribut, das eine Liste von Büchern speichert
 
     def buch_hinzufügen(self, buch: Buch):
         """Fügt ein Buch zum Bücherregal hinzu."""
-        self.__bücher.append(buch)
+        self._bücher.append(buch)
         print(f"Das Buch '{buch.titel}' wurde dem Regal hinzugefügt.")
 
     def buch_entfernen(self, buch: Buch):
         """Entfernt ein Buch aus dem Bücherregal."""
-        if buch in self.__bücher:
-            self.__bücher.remove(buch)
+        if buch in self._bücher:
+            self._bücher.remove(buch)
             print(f"Das Buch '{buch.titel}' wurde aus dem Regal entfernt.")
         else:
             print(f"Das Buch '{buch.titel}' ist nicht im Regal.")
 
     def alle_bücher_anzeigen(self):
         """Zeigt alle Bücher im Bücherregal an."""
-        if self.__bücher:
+        if self._bücher:
             print("Bücher im Regal:")
-            for buch in self.__bücher:
+            for buch in self._bücher:
                 status = buch.get_status()
                 print(f" - {buch.titel} von {buch.autor} (Status: {status})")
         else:
@@ -67,7 +67,7 @@ print("Titel lautet", buch1.titel)  # Zugriff auf das öffenliche Attribut 'tite
 buch2 = Buch("1984", "George Orwell")
 print("Autor lautet", buch2.autor)  # Zugriff auf das öffenliche Attribut 'autor'
 print("Status lautet", buch2.get_status())  # Zugriff auf das private Attribut 'status' durch eine Methode
-print("Status lautet", buch2.__status)  # 'Fehler': Zugriff auf ein privates Attribut
+print("Status lautet", buch2._status)  # 'Fehler': Zugriff auf ein privates Attribut
 
 # Erstellung eines Bücherregals und Hinzufügen von Büchern
 regal = Bücherregal()
