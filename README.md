@@ -1,4 +1,4 @@
-# [DE-Kursname hier eintragen]
+# Python Grundkurs
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `Python Grundkurs`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
