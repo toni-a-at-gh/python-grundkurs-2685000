@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python_grund_kurs"
+version = "1.0.0"
+description = "Beispielcode für das LinkedIn Learning Kurs: Python Grundkurs"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "LinkedIn Learning Exercise Files License" }
+authors = [
+    { name = "Julia Imlauer", email = "info@linkedinlearning.com" }
+]
+keywords = ["python", "grundkurs", "linkedinlearning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: LinkedIn Learning Exercise Files License",
+    "Operating System :: OS Independent"
+]
+homepage = "https://github.com/LinkedInLearning/python-grundkurs-2685000"
+
+[project.urls]
+"Homepage" = "https://github.com/LinkedInLearning/python-grundkurs-2685000"
+
+[project.dependencies]
+pytest==8.3.2
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+
+# 'Installation' mittels pyproject.toml
+# pip install . 
