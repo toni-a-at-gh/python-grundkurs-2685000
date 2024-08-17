@@ -1,7 +1,7 @@
-from python_grund_kurs.aufgaben import Aufgabe
-from python_grund_kurs.kategorien import KategorieManager
+from bank_account.aufgaben import Aufgabe
+from bank_account.account import KategorieManager
 
-from python_grund_kurs.utils.sortieren import sortiere_nach_prio
+from bank_account.utils.sortieren import sortiere_nach_prio
 
 def main():
     kategorie_manager = KategorieManager()
