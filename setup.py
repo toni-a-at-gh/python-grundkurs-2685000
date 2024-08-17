@@ -22,3 +22,6 @@ setup(
     ],
     python_requires='>=3.6',  # Specify Python version requirement
 )
+
+# 'Installation' mittels setup.py
+# python3 setup.py install
