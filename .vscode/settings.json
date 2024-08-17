@@ -17,8 +17,18 @@
   "files.autoSave": "afterDelay",
   "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
-  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/your_project_directory",
+    "./src"
+  ],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.testing.pytestPath": "python3", // Use python3 to run pytest
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }
