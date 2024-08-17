@@ -15,9 +15,11 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     install_requires=requirements,
+    license_files=('LICENSE',),
+    license='LinkedIn Learning Exercise Files License',
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: LinkedIn Learning Exercise Files License',
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',  # Specify Python version requirement
