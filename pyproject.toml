@@ -34,3 +34,9 @@ license-files = ["LICENSE"]
 
 # 'Installation' mittels pyproject.toml
 # pip install . 
+
+# 'Uninstall' mittels pyproject.toml
+# pip uninstall .
+
+# Development mode
+# pip install -e .
