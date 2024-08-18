@@ -25,11 +25,11 @@ setup(
     python_requires='>=3.6',  # Specify Python version requirement
 )
 
-# 'Installation' mittels setup.py
-# python3 setup.py install
+# 'Installation' 
+# pip install .
 
-# 'Uninstallation' mittels setup.py
-# python3 setup.py uninstall
+# 'Uninstallation'
+# pip uninstall python_grund_kurs
 
 # Development Mode
-# python3 setup.py develop
+# pip install -e .
