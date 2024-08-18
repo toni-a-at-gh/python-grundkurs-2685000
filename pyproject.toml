@@ -36,7 +36,7 @@ license-files = ["LICENSE"]
 # pip install . 
 
 # 'Uninstall' mittels pyproject.toml
-# pip uninstall .
+# pip uninstall python_grund_kurs
 
 # Development mode
 # pip install -e .
