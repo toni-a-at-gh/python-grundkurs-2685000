@@ -8,6 +8,8 @@ def subtrahiere_zehn(zahl):
     return zahl - 10
 
 def teile_durch_vier(zahl):
+    if zahl == 0:
+        raise ZeroDivisionError("Zahl darf nicht 0 sein")
     if zahl % 4 != 0:
         raise ValueError("Zahl muss durch 4 teilbar sein")
     return zahl / 4
