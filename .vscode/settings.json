@@ -22,7 +22,7 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "python.analysis.extraPaths": [
-    "${workspaceFolder}/your_project_directory",
+    "${workspaceFolder}/src",
     "./src"
   ]
 }
