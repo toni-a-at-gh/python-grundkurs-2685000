@@ -27,3 +27,9 @@ setup(
 
 # 'Installation' mittels setup.py
 # python3 setup.py install
+
+# 'Uninstallation' mittels setup.py
+# python3 setup.py uninstall
+
+# Development Mode
+# python3 setup.py develop
