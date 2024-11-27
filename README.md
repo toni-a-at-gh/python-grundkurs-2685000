@@ -30,7 +30,7 @@ Dieses Problem lösen Sie wie folgt:
     Add changes to git using this command: git add .
     Commit changes using this command: git commit -m "some message"
 
-### Autor
+### Autorin
 
 **Dr. Julia Imlauer**
 
@@ -39,5 +39,5 @@ _Robotikerin | ML-Expertin | AI-Enthusiastin_
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/julia-imlauer) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com/learning/tbd
-[lil-thumbnail-url]: tbd
+[lil-course-url]: https://www.linkedin.com/learning/python-grundkurs-25087490
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQGVDy6GhNuQrg/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1732613158551?e=2147483647&v=beta&t=5LC7lo-5r3cDZmF-extYK9uspoQn-T692GVco2Na7xM
