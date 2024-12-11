@@ -69,3 +69,8 @@ print("mein_dictonary nach dem Löschen:", mein_dictonary)
 # Aufgabe:
 # Legen Sie eine Integer-Variable meine_variable mit dem Wert 5 an,
 # casten Sie diese in eine Float-Variable und geben Sie das Ergebnis aus.
+
+meine_variable = 5
+print("Meine_variable vor dem Cast:", meine_variable)
+meine_variable = float(meine_variable)
+print("Meine_variable nach dem Cast:", meine_variable)
