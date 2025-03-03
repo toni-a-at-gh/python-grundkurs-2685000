@@ -112,5 +112,3 @@ else:
 
 # Ergebnis ausgeben:
 print("Ende von " + scriptName)
-
-# 2025-01-29: HIER WEITERMACHEN: Das optionale Argument wird nicht erkannt als bool
