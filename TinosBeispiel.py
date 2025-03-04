@@ -30,7 +30,8 @@
 # - Implementieren Sie eine Schleife, um mehrere Berechnungen hintereinander durchzuführen, bis der Benutzer das Programm beendet.
 
 # Gewollte Änderungen im Vergleich zur Lösung:
-# PEP8 wurde nicht beachtet, es wurde RUFF nebenher laufen gelassen
+# Es wurde nicht "Pylint" laufen gelassen, um auf PEP8 zu prüfen, sondern, es wurde RUFF nebenher laufen gelassen. Grund:
+# das nutzen wir auch im CAS-Projekt.
 
 import os  # Wird gebraucht, um die Konsole leeren zu können
 
