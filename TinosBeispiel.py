@@ -1,3 +1,6 @@
+# Projektstrukturen 
+# ****************** 
+#
 # Dieses Python-Skript hier ist an sich keine Skript wie in den anderen 
 # Branches zuvor, sondern ist eher als Notiz zur Erläuterung der bereits erstellten
 # Projektstruktur gedacht!
@@ -50,10 +53,26 @@
 #
 # In Modulen und Skripten können Codezeilen nach folgendem Muster auftauchen:
 #
-#   from <Package>.<Modul> import <Klasse>
+#   from <Package>.<Modul> import <Klasse | Funktion>
 #
-# Beispiel:
+# Beispiele:
 # 
-#   from python_grund_kurs.kategorien import KategorieManager
-
-# HIER WEITERMACHEN
+#   "from python_grund_kurs.kategorien import KategorieManager"
+#   --> importiert aus dem Package "python_grund_kurs" und dem darin befindlichen Modul "kategorien"
+#       die KLASSE "KategorieManager"
+#
+#   "from python_grund_kurs.utils.sortieren import sortiere_nach_prio"
+#   --> importiert aus dem Package "python_grund_kurs", dessen Unterpackage "utils" das darin befind-
+#       liche Modul "sortieren" die darin befindliche FUNKTION "sortiere_nach_prio"
+#
+#
+# Versionsbezeichner:
+# ===================
+#
+# Packages haben Versionen. Format: a.b.c
+#
+#   a: Major Inkrement
+#   b: Mino Inkrement
+#   c: Patch
+#
+# Beispiel: 1.0.1
