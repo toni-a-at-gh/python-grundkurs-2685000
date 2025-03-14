@@ -34,9 +34,9 @@
 # 
 # 'Module':
 # ---------
-# Das sind diejenigen .py Dateien, die tatsächlich Code enthalten (z.B. Klassendefinitionen oder
-# Funktionsdefinitionen) und die auf der gleichen Ordnerebene liegen wie die "__init.py__", die
-# somit zum selben Package gehören.
+# Das sind diejenigen .py Dateien in den Packages, die tatsächlich Code enthalten (z.B. Klassen-
+# definitionen oder # Funktionsdefinitionen) und die auf der gleichen Ordnerebene liegen wie 
+# die "__init.py__", die somit zum selben Package gehören.
 #
 # 'Scripts':
 # ----------
@@ -120,6 +120,8 @@
 #
 # Anmerkung dazu: 
 # Ein Projekt wird über diese Konfigurationsdateien "setup.py" bzw. "pyproject.toml" konfiguriert.
+# Üblicherweise werden solche Projekte Gegenstand der Verteilung (Deployment) an Kollegen, Freunde und 
+# Kunden.
 #
 #
 # Projekt konfigurieren mittels 'setup.py':
@@ -191,6 +193,42 @@
 #       python_requires='>=3.6',  # Specify Python version requirement
 #
 #
-# Was ist ein "Python Environment"?
-# =================================
+# Installation eines Python-Projekts
+# ==================================
 #
+# Damit Packages (egal, ob es sich um das aktuelle Projekt oder externe Projekte handelt) für Python sichtbar sind
+# in der aktuellen Python-Umgebung, muss / müssen diese Package(s) 'installiert' werden. 'Installieren' bedeutet
+# hierbei technisch, dass KOPIEN dieser Packages im Nutzerverzeichnis angelegt werden.
+# Beim Installieren muss dem Python bekanntgegeben werden, welche Projekte gewünscht sind, damit es nach der 
+# jeweiligen individuellen Konfiguration 'setup.py' suchen kann.
+#
+# Fall 1): 
+# Beispielcode, um das aktuelle Projekt (hier im Beispiel "python_grund_kurs") zu installieren:
+#
+#   pip install .
+# 
+# Was passiert hierbei (Antwort vom MS Copilot)?:
+#
+#   Die Codezeile pip install . bewirkt, dass das aktuelle Verzeichnis als Python-Paket installiert wird. 
+#   Hier ist eine detaillierte Erklärung:
+#
+#       pip install :    Führt pip aus, das Paketverwaltungswerkzeug für Python.
+#       .           :   Das Punktzeichen (.) steht für das aktuelle Verzeichnis.
+#
+#   Wenn du diesen Befehl in einem Verzeichnis ausführst, das eine setup.py-Datei enthält, wird pip die Informationen 
+#   aus dieser Datei verwenden, um das Paket zu installieren. Dies ist besonders nützlich während der Entwicklung 
+#   eines Python-Projekts, da du das Paket lokal installieren und testen kannst.
+# 
+# Anmerkung dazu:
+# Beim Installieren dieses Projekts werden alle Packages in das User-Verzeichnis (z.B. unter Windows
+# "c:\users\<Meine ID>\appdata\roaming\python\python310\site-packages") kopiert und von dort genutzt. Will man 
+# den Code in den Modulen dieser Packages aber noch ändern und testen, muss man das Projekt im sog. "Entwicklermodus" 
+# installieren.
+#
+# Fall 2):
+# Beispielcode, um das aktuelle Projekt im "Entwicklermodus" zu installieren:
+#
+#   pip install -e .
+#
+# Nun kann man den Code in den Modulen ändern und die Auswirkung der Änderung sehen. Python nutzt im Entwickler-
+# modus nicht irgendwelche Kopien im User-Verzeichnis, sondern die Dateien im aktuellen Projekt.
