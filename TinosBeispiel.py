@@ -14,6 +14,13 @@
 # - Dieses Package soll außerdem ein Skript beinhalten, das die Hauptfunktion enthält
 # - Es soll auch die "pyproject.toml" enthalten
 
-
+# ******************************************************************************************
+# HINWEIS: 
+#
+# Das Skript "scr/banksimulation.py" ist das eigentliche Hauptskript, das aufgerufen werden
+# muss. Es ist nur aber lauffähig, wenn zuvor das Projekt "bank_account" per "pip install ." 
+# auf Ebene, in der sich die "pyproject.toml" befindet, installiert wurde. Das wurde getestet.
+#
+# ******************************************************************************************
 
 

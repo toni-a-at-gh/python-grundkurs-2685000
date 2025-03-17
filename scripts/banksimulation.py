@@ -1,15 +1,12 @@
 # Die folgende Aufgabenstellung ist die gleiche wie die aus # "03_12-Bankkonto-Bsp-mit-Vererbg".
 # Im Gegensatzu zum Code in Branch "03_12-Bankkonto-Bsp-mit-Vererbg" ist hier eine Projektstruktur
-# eingebaut worden. Die Funktionalität ist identisch.
+# eingebaut worden. Der Code ist daher in verschiedenen Modulen gelandet, die Funktionalität ist
+# aber noch identisch.
 
-# Die Aufgabenstellung:
+# Die urprüngliche Aufgabenstellung:
 
 # Aufgabe: Erstellen Sie ein neues Jugendbankkonto, dass von der Klasse
 # BankAccount erbt und beschränken sie die Abhebungen auf maximal 25€.
-
-# Hinweis in eigener Sache: für dieses Beispiel erweitere ich die von mir erstellte Klasse
-# (siehe Branch 03_08-Bankkonto-Bsp), nicht die von der Trainingsleiterin. Grund: ich hatte schon
-# einiges mehr ergänzt, z.B. Kommandozeile leeren
 
 # ******************************************************************************************
 # HINWEIS: 
