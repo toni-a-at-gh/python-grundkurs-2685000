@@ -1,3 +1,5 @@
+from bank_account.bankAccount import BankAccount
+
 class Jugendkonto(BankAccount):
     """Klasse für einen eingeschränkten Bankaccount für Jugendliche."""
 

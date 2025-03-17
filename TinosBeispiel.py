@@ -14,16 +14,6 @@
 # - Dieses Package soll außerdem ein Skript beinhalten, das die Hauptfunktion enthält
 # - Es soll auch die "pyproject.toml" enthalten
 
-# Ab der folgenden Codezeile steht deshalb u.U. noch originaler Code aus dem Branch
-# "03_12-Bankkonto-Bsp-mit-Vererbg".
 
-# Die Aufgabenstellung:
-
-# Aufgabe: Erstellen Sie ein neues Jugendbankkonto, dass von der Klasse
-# BankAccount erbt und beschränken sie die Abhebungen auf maximal 25€.
-
-# Hinweis in eigener Sache: für dieses Beispiel erweitere ich die von mir erstellte Klasse
-# (siehe Branch 03_08-Bankkonto-Bsp), nicht die von der Trainingsleiterin. Grund: ich hatte schon
-# einiges mehr ergänzt, z.B. Kommandozeile leeren
 
 

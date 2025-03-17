@@ -1,6 +1,37 @@
+# Die folgende Aufgabenstellung ist die gleiche wie die aus # "03_12-Bankkonto-Bsp-mit-Vererbg".
+# Im Gegensatzu zum Code in Branch "03_12-Bankkonto-Bsp-mit-Vererbg" ist hier eine Projektstruktur
+# eingebaut worden. Die Funktionalität ist identisch.
+
+# Die Aufgabenstellung:
+
+# Aufgabe: Erstellen Sie ein neues Jugendbankkonto, dass von der Klasse
+# BankAccount erbt und beschränken sie die Abhebungen auf maximal 25€.
+
+# Hinweis in eigener Sache: für dieses Beispiel erweitere ich die von mir erstellte Klasse
+# (siehe Branch 03_08-Bankkonto-Bsp), nicht die von der Trainingsleiterin. Grund: ich hatte schon
+# einiges mehr ergänzt, z.B. Kommandozeile leeren
+
+# ******************************************************************************************
+# HINWEIS: 
+#
+# Das Skript "scr/banksimulation.py" ist nur lauffähig, wenn zuvor das Projekt 
+# "bank_account" per "pip install ." auf Ebene, in der sich die "pyproject.toml" befindet,
+# installiert wurde.
+#
+# ******************************************************************************************
+
+
 import os  # Wird gebraucht, um "clear screen" in der Kommandozeile durch das Skript hier selber auszuführen
 
+# Importieren der Klasse "BankAccount" aus dem Modul "bankAccount", das wiederum Teil des Packages
+# "bank_account" ist:
+from bank_account.bankAccount import BankAccount
 
+# Importieren der Klasse "Jugendkonto" aus dem Modul "bankAccount", das wiederum Teil des Packages
+# "bank_account" ist:
+from bank_account.jugendkonto import Jugendkonto 
+
+# Die Hauptfunktion des Skripts:
 def main():
     # Kommandozeile löschen:
     os.system("cls")
